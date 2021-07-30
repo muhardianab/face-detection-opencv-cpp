@@ -23,6 +23,7 @@ Build finished with error(s).
 The terminal process failed to launch (exit code: -1).
 ```
 
-maybe in `launch.json`, `c_cpp_properties.json`, or `tasks.json`
+maybe the problem in `launch.json`, `c_cpp_properties.json`, or `tasks.json`, because vscode not detected the problem and pop up said in `launch.json`
+
 
 `task.json` deleted, try to make again and match it with code in terminal
