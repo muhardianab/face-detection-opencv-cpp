@@ -10,26 +10,24 @@ using namespace cv;
 void detectAndDisplay(Mat frame);
 CascadeClassifier face_cascade;
 String face_cascade_name;
-int main(int argc, const char** argv)
 
+int main(int argc, const char** argv)
 {
     CommandLineParser parser(argc, argv, "{camera|0|Camera device number.}");
 
-    face_cascade_name = "/usr/local/share/opencv4/haarcascades/haarcascade_frontalface_alt2.xml";
-
     //-- 1. Load the cascades
+    face_cascade_name = "/usr/local/share/opencv4/haarcascades/haarcascade_frontalface_alt2.xml";
     if(!face_cascade.load(face_cascade_name))
     {
         cout << "--(!)Error loading face cascade\n";
         return -1;
     };
 
+    //-- 2. Read the video stream
     int camera_device = parser.get<int>("camera");
     VideoCapture capture;
-
-    //-- 2. Read the video stream
-    capture.open( camera_device );
-    if ( ! capture.isOpened() )
+    capture.open(camera_device);
+    if (!capture.isOpened())
     {
         cout << "--(!)Error opening video capture\n";
         return -1;
@@ -37,9 +35,15 @@ int main(int argc, const char** argv)
     Mat frame;
 
     // rescale image capture
+    //int width = 640;
+    //int height = 480;
+    //Mat rescale;
+
     capture.set(CAP_PROP_FRAME_WIDTH, 640);
     capture.set(CAP_PROP_FRAME_HEIGHT, 480);
     Mat image;
+    //resize(frame, rescale, Size(width, height), INTER_AREA);
+    //Mat frame
 
     while(capture.read(frame))
     {
