@@ -11,14 +11,14 @@ launch it with code `./tcc.out`, got error `--(!)Error loading face cascade`
 if you try to launch vscode cpp, try to launch from terminal in current directory with `code .`
 and still error, terminal said
 
-`
+``
 Starting build...
 /usr/bin/gcc -gcc /home/muhardianab/Documents/cpp-file/face-recognition-cpp/tutorial-cascade-classifier.cpp -o /home/muhardianab/Documents/cpp-file/face-recognition-cpp/tutorial-cascade-classifier
 gcc: error: unrecognized debug output level ‘cc’
 
 Build finished with error(s).
 The terminal process failed to launch (exit code: -1).
-`
+``
 
 maybe in `launch.json`, `c_cpp_properties.json`, or `tasks.json`
 
