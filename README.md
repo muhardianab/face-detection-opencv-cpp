@@ -6,6 +6,8 @@ try build and launch from terminal ubuntu after setting cd
 
 ``g++ tutorial-cascade-classifier.cpp -o tcc.out `pkg-config --cflags --libs opencv4`.``
 
+launch it with code `./tcc.out`, got error `--(!)Error loading face cascade`
+
 if you try to launch vscode cpp, try to launch from terminal in current directory with `code .`
 and still error, terminal said
 
