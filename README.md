@@ -19,7 +19,7 @@ unzip opencv_contrib.zip
 `mkdir -p build && cd build`
 
 4. Configure or generate build scripts for the preferred build system using cmake
-`cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-master/modules ../opencv-master`
+```cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-master/modules ../opencv-master```
 
 5. Build it
 `cmake --build`
