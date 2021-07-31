@@ -8,14 +8,12 @@ On Ubuntu can use this tutorial from [OpenCV Documentation](https://docs.opencv.
 On terminal `sudo apt update && sudo apt install -y cmake g++ wget unzip`
 
 2. Download and package the sources
-
-`wget -O opencv.zip https://github.com/opencv/opencv/archive/master.zip`
-
-`wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/master.zip`
-
-`unzip opencv.zip`
-
-`unzip opencv_contrib.zip`
+```
+wget -O opencv.zip https://github.com/opencv/opencv/archive/master.zip
+wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/master.zip
+unzip opencv.zip
+unzip opencv_contrib.zip
+```
 
 3. Create new directory for build file and switch current directory on it
 `mkdir -p build && cd build`
