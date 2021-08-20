@@ -1,4 +1,4 @@
-# Face Recognition OpenCV C++
+# Face Detection OpenCV C++
 
 ## Instalation
 ### Install OpenCV
