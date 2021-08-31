@@ -46,7 +46,7 @@ By default OpenCV will be installed to the /usr/local directory, all files will 
 
 ## How to use
 
-Use the face recognition file
+Use the face detection file
 
 1. If using vscode, rename `vscode` file as `.vscode` as hidden folder and can be detected by vscode. This is vscode setting for build, compiler, and include folder
 
